@@ -81,11 +81,10 @@ const LocationMap: React.FC<LocationMapProps> = ({
   const isDark = theme === "dark";
   const customIcon = createCustomIcon(isDark);
 
-  // Dark mode: Stadia Alidade Smooth Dark (natural dark style like NEV site)
-  // Light mode: Stadia Alidade Smooth (clean light style)
+  // CartoDB tiles (free, no API key required)
   const tileUrl = isDark
-    ? "https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
-    : "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png";
+    ? "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+    : "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png";
 
   return (
     <div
