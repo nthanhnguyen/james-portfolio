@@ -31,9 +31,12 @@ const Intro = () => {
           priority
         />
         <div className="relative h-full p-6 md:px-16 md:py-12 flex flex-col gap-8">
-          <h1 className="text-4xl lg:text-6xl font-bold flex flex-col md:flex-row md:items-center">
-            Hi, I am&nbsp;
-            <span className="text-gradient leading-tight">Nguyen</span>
+          <h1 className="text-4xl lg:text-6xl font-bold">
+            Hi, I am{" "}
+            <span className="text-gradient">Nguyen</span>
+            <span className="block text-xl lg:text-2xl font-medium text-gray-500 dark:text-slate-muted mt-1">
+              You can call me <span className="text-gradient font-semibold">James</span>
+            </span>
           </h1>
           <div className="flex-1 flex flex-col justify-center">
             <ul
